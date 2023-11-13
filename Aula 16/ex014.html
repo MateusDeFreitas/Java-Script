@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Contador</h1>
+
+    </header>
+    <section>
+        <div id="dados">
+            <p>Início: 
+                <input type="number" name="nini" id="ini">
+            </p>
+            <p>Fim:
+                <input type="number" name="nfim" id="fim">
+            </p>
+            <p>Passo:
+                <input type="number" name="npas" id="pas">
+            </p>
+
+            <p>
+                <input type="button" value="Confirmar" onclick="confirmar()">
+            </p>
+        </div>
+        <div id="res">
+            Preparando contagem...
+        </div>
+    </section>
+    <footer>
+        <p>&copy; @mateus_sant01</p>
+    </footer>
+
+</body>
+<script src="script.js"></script>
+</html>

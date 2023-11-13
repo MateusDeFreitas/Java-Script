@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>where are you from?</title>
+</head>
+<body>
+    <h1>Da onde você é?</h1>
+    O meu país de origem é: <input type="text" name="txtpais" id="txtpais">!
+    <input type="button" value="verificar" onclick="processar()">
+    <div id = "res">
+
+    </div>
+    <script>
+        function processar() {
+            var po = document.querySelector("input#txtpais")
+            var res = document.querySelector("div#res")
+            res.innerHTML = `<p>seu país natal é ${po} </p>`
+            if (po == "Brasil") {
+                res.innerHTML += `<p>Você é brasileiro</p>`
+            }else{
+                res.innerHTML += `<p>Você é gringo</p>`
+            }
+        }
+    </script>
+</body>
+</html>
