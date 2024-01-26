@@ -9,18 +9,19 @@
     <h1>Da onde você é?</h1>
     O meu país de origem é: <input type="text" name="txtpais" id="txtpais">!
     <input type="button" value="verificar" onclick="processar()">
+    
     <div id = "res">
 
     </div>
     <script>
         function processar() {
-            var po = document.querySelector("input#txtpais")
+            var po = document.querySelector("input#txtpais").value
             var res = document.querySelector("div#res")
             res.innerHTML = `<p>seu país natal é ${po} </p>`
-            if (po == "Brasil") {
-                res.innerHTML += `<p>Você é brasileiro</p>`
-            }else{
-                res.innerHTML += `<p>Você é gringo</p>`
+            if (po.toLowerCase() == "brasil") {
+                res.innerHTML += `<p>Você é brasileiro</p>`;
+            } else {
+                res.innerHTML += `<p>Você é gringo</p>`;
             }
         }
     </script>
